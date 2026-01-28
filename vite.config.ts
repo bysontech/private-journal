@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     honox({
       client: {
-        input: ["/app"],
+        input: ["./app/client.tsx"],
       },
     }),
     pages(),
@@ -63,13 +63,5 @@ export default defineConfig({
   },
   build: {
     target: "esnext",
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          "ai-vendor": ["@xenova/transformers"],
-          "ui-vendor": ["react", "react-dom"],
-        },
-      },
-    },
   },
 });

@@ -1,0 +1,35 @@
+# Cursor Rules for PrivateJournal
+
+## Primary Instruction Source
+
+**ALWAYS read `AGENTS.md` first before any code generation.**
+
+## Code Style
+
+- TypeScript strict mode
+- Functional components only
+- Use Tailwind utility classes
+- Prefer composition over inheritance
+
+## File Organization
+
+- Components in `app/components/`
+- Utilities in `app/lib/`
+- Routes in `app/routes/`
+
+## Testing
+
+- Test in Chrome, Firefox, Safari
+- Verify offline mode works
+- Check IndexedDB operations
+
+## Commits
+
+- Use conventional commits
+- Reference issue numbers
+
+## Before Asking User
+
+1. Check AGENTS.md
+2. Check existing code patterns
+3. Review TypeScript errors

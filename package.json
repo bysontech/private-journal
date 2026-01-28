@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/build-css.js",
+    "build:css": "node scripts/build-css.js",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit"
   },
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "@hono/vite-dev-server": "^0.24.1",
+    "@tailwindcss/typography": "^0.5.19",
     "@types/dompurify": "^3.0.5",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
